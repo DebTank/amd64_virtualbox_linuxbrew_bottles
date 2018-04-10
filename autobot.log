@@ -1,0 +1,18 @@
+==> Downloading https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_linux-x64_bin.tar.gz
+Already downloaded: /home/monday/.cache/Homebrew/jdk-10.tar.gz
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall jdk`
+==> Caveats
+By installing and using JDK you agree to the
+Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX
+http://www.oracle.com/technetwork/java/javase/terms/license/index.html
+==> Summary
+🍺  /home/linuxbrew/.linuxbrew/Cellar/jdk/10: 527 files, 327.5MB, built in 18 seconds
+==> Determining jdk bottle rebuild...
+==> Bottling jdk-10.x86_64_linux.bottle.tar.gz...
+==> Detecting if jdk-10.x86_64_linux.bottle.tar.gz is relocatable...
+./jdk-10.x86_64_linux.bottle.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "938713e0bcb8a991c84910587cf7d987cf2dab1560c76cb7991decfe6b591b1f" => :x86_64_linux
+  end
