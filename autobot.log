@@ -1,46 +1,24 @@
-==> Downloading https://www.apache.org/dyn/closer.cgi?path=subversion/subversion-1.9.7.tar.bz2
-Already downloaded: /home/monday/.cache/Homebrew/subversion-1.9.7.tar.bz2
-==> Patching
-patching file configure
-patching file subversion/bindings/swig/perl/native/Makefile.PL.in
-patching file build/get-py-info.py
-==> Downloading https://www.apache.org/dyn/closer.cgi?path=serf/serf-1.3.9.tar.bz2
-Already downloaded: /home/monday/.cache/Homebrew/subversion--serf-1.3.9.tar.bz2
-==> /home/linuxbrew/.linuxbrew/opt/scons/bin/scons PREFIX=/home/linuxbrew/.linuxbrew/Cellar/subversion/1.9.7_4 GSSAPI=/home/linuxbrew/.linuxbrew/opt/krb5 CC=/home/linuxbrew/.linuxbrew/bin/gcc-7 CFLAGS=-Os -w -pipe -march=core2 LINKFLAGS=-Wl,--dynamic-linker=/home/linuxbrew/.linuxbrew/lib/ld.so -Wl,-rpath=/home/linuxbrew/.linuxbrew/Cellar/subversion/1.9.7_4/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/lib -L/home/linuxbrew/.linuxbrew/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/ncurses/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/util-linux/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/apr/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/openssl/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/libbsd/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/expat/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/apr-util/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/readline/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/sqlite/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/gdbm/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/berkeley-db/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/perl/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/xz/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/bzip2/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/libffi/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/zlib/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/python/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/libmagic/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/bison/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/krb5/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/libyaml/lib -Wl,-rpath=/home/linuxbrew/.linuxbrew/opt/ruby/lib OPENSSL=/home/linuxbrew/.linuxbrew/opt/openssl APR=/home/linuxbrew/.linuxbrew/opt/apr APU=/home/linuxbrew/.linuxbrew/opt/apr-util ZLIB=/home/linuxbrew/.linuxbrew/opt/zlib
-==> /home/linuxbrew/.linuxbrew/opt/scons/bin/scons install
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/subversion/1.9.7_4 --enable-optimize --with-zlib=/home/linuxbrew/.linuxbrew/opt/zlib --with-sqlite=/home/linuxbrew/.linuxbrew/opt/sqlite --with-apr=/home/linuxbrew/.linuxbrew/opt/apr --with-apr-util=/home/linuxbrew/.linuxbrew/opt/apr-util --with-apxs=no --with-serf=/home/linuxbrew/.linuxbrew/Cellar/subversion/1.9.7_4 --disable-mod-activation --without-apache-libexecdir --without-berkeley-db --without-gpg-agent --disable-nls --with-ruby-sitedir=/home/linuxbrew/.linuxbrew/Cellar/subversion/1.9.7_4/lib/ruby
-==> make
-==> make install
-==> make tools
-==> make install-tools
-==> make swig-py
-==> make install-swig-py
-==> make swig-pl
-==> make install-swig-pl
-==> make swig-rb EXTRA_SWIG_LDFLAGS=-L/usr/lib
-==> make install-swig-rb
+==> Downloading https://fastdl.mongodb.org/src/mongodb-src-r4.0.0.tar.gz
+Already downloaded: /home/monday/.cache/Homebrew/mongodb-4.0.0.tar.gz
+==> Downloading https://files.pythonhosted.org/packages/cd/b0/c2d700252fc251e91c08639ff41a8a5203b627f4e0a2ae18a6b662ab32ea/Cheetah-2.4.4.tar.gz
+Already downloaded: /home/monday/.cache/Homebrew/mongodb--Cheetah-2.4.4.tar.gz
+==> python -c import setuptools... --no-user-cfg install --prefix=/tmp/mongodb-20180717-30959-uzrre/mongodb-src-r4.0.0/vendor --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/4a/85/db5a2df477072b2902b0eb892feb37d88ac635d36245a72a6a69b23b383a/PyYAML-3.12.tar.gz
+Already downloaded: /home/monday/.cache/Homebrew/mongodb--PyYAML-3.12.tar.gz
+==> python -c import setuptools... --no-user-cfg install --prefix=/tmp/mongodb-20180717-30959-uzrre/mongodb-src-r4.0.0/vendor --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/ec/cc/28444132a25c113149cec54618abc909596f0b272a74c55bab9593f8876c/typing-3.6.4.tar.gz
+Already downloaded: /home/monday/.cache/Homebrew/mongodb--typing-3.6.4.tar.gz
+==> python -c import setuptools... --no-user-cfg install --prefix=/tmp/mongodb-20180717-30959-uzrre/mongodb-src-r4.0.0/vendor --single-version-externally-managed --record=installed.txt
+==> bash ./build.sh ssl
+==> /home/linuxbrew/.linuxbrew/opt/scons/bin/scons install --prefix=/home/linuxbrew/.linuxbrew/Cellar/mongodb/4.0.0 -j1 CC=/usr/bin/gcc-7 CXX=/usr/bin/g++-7 -std=c++11 CCFLAGS=-mmacosx-version-min= LINKFLAGS=-mmacosx-version-min= --use-new-tools --build-mongoreplay=true --disable-warnings-as-errors --ssl CCFLAGS=-I/home/linuxbrew/.linuxbrew/opt/openssl/include LINKFLAGS=-L/home/linuxbrew/.linuxbrew/opt/openssl/lib
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall subversion`
-==> Caveats
-svntools have been installed to:
-  /home/linuxbrew/.linuxbrew/opt/subversion/libexec
-
-The perl bindings are located in various subdirectories of:
-  /home/linuxbrew/.linuxbrew/opt/subversion/lib/perl5
-
-If you wish to use the Ruby bindings you may need to add:
-  /home/linuxbrew/.linuxbrew/lib/ruby
-to your RUBYLIB.
-
-Bash completion has been installed to:
-  /home/linuxbrew/.linuxbrew/etc/bash_completion.d
-==> Summary
-🍺  /home/linuxbrew/.linuxbrew/Cellar/subversion/1.9.7_4: 261 files, 38.5MB, built in 3 minutes 15 seconds
-==> Determining subversion bottle rebuild...
-==> Bottling subversion-1.9.7_4.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if subversion-1.9.7_4.x86_64_linux.bottle.1.tar.gz is relocatable...
-./subversion-1.9.7_4.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall mongodb`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/mongodb/4.0.0: 16 files, 1.9GB, built in 105 minutes 16 seconds
+==> Determining mongodb bottle rebuild...
+==> Bottling mongodb-4.0.0.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if mongodb-4.0.0.x86_64_linux.bottle.1.tar.gz is relocatable...
+./mongodb-4.0.0.x86_64_linux.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "ee1d8c6f495c2c4c5445cf48bbe20fb6f3c4201772df3d6b568cde4ec0f825ab" => :x86_64_linux
+    sha256 "92185e986a148507e786bbd4df4b8e557989e28c9839cb369bc31d67b8fd1bc2" => :x86_64_linux
   end
